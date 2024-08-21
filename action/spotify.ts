@@ -1,5 +1,3 @@
-import { NextResponse } from "next/server";
-
 const {
   SPOTIFY_CLIENT_ID: client_id,
   SPOTIFY_CLIENT_SECRET: client_secret,
@@ -29,7 +27,7 @@ const getAccessToken = async () => {
   return data;
 };
 
-export async function GET() {
+export async function FetchNowPlaying() {
   const { access_token } = await getAccessToken();
 
   const response = await fetch(NOW_PLAYING_ENDPOINT, {
@@ -40,13 +38,12 @@ export async function GET() {
   });
 
   if (response.status === 204 || response.status > 400) {
-    return NextResponse.json({ isPlaying: false });
+    return { isPlaying: false };
   }
 
   const data = await response.json();
 
-  if (data.currently_playing_type !== "track")
-    return NextResponse.json({ isPlaying: false });
+  if (data.currently_playing_type !== "track") return { isPlaying: false };
 
   const songData = {
     isPlaying: data.is_playing,
@@ -59,5 +56,5 @@ export async function GET() {
     songUrl: data.item.external_urls.spotify,
   };
 
-  return NextResponse.json(songData);
+  return songData;
 }

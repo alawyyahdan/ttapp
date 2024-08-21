@@ -19,9 +19,9 @@ const DiscordSnippet = () => {
   return (
     <CustomSnippet
       avatarSrc={userData.avatar.link}
+      header={userData.username}
       href={"https://discord.com/users/" + userData.id}
       subtitle="life is roblox"
-      header={userData.username}
       tooltipContent="discord"
     />
   );

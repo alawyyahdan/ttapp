@@ -2,12 +2,12 @@ import { use } from "react";
 
 import CustomSnippet from "./custom-snippet";
 
-async function fetchSpotifyData(): Promise<any> {
-  const res = await fetch(`${process.env.BASE_URL}/api/spotify`, {
-    next: { revalidate: 1 },
-  });
+import { FetchNowPlaying } from "@/action/spotify";
 
-  return res.json();
+async function fetchSpotifyData(): Promise<any> {
+  const data = await FetchNowPlaying();
+
+  return data;
 }
 
 const SpotifySnippet = () => {
@@ -19,9 +19,9 @@ const SpotifySnippet = () => {
     return (
       <CustomSnippet
         avatarSrc={data.albumImageUrl}
+        header={data.title}
         href={data.songUrl}
         subtitle={data.artist}
-        header={data.title}
         tooltipContent="Now Playing"
       />
     );

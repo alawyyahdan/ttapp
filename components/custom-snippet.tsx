@@ -2,7 +2,6 @@ import { Avatar } from "@nextui-org/avatar";
 import { Snippet } from "@nextui-org/snippet";
 import { Tooltip } from "@nextui-org/tooltip";
 import Link from "next/link";
-import { title } from "@/components/primitives";
 
 interface CustomSnippetProps {
   href: string;
@@ -26,7 +25,7 @@ const CustomSnippet: React.FC<CustomSnippetProps> = ({
           <div className="flex gap-4 m-2">
             <Avatar size="lg" src={avatarSrc} />
             <div className="flex flex-col justify-center">
-              <span className='font-semibold text-base'>{header}</span>
+              <span className="font-semibold text-base">{header}</span>
               <span>{subtitle}</span>
             </div>
           </div>
