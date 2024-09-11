@@ -6,7 +6,7 @@ import { DiscordUser } from "@/types";
 
 async function fetchDiscordUser(): Promise<DiscordUser> {
   const res = await fetch(
-    "https://discordlookup.mesalytic.moe/v1/user/271251138161016834",
+    "https://discordlookup.mesalytic.moe/v1/user/715095862304440321",
     { next: { revalidate: 3600 } },
   );
 
