@@ -18,7 +18,7 @@ export default function Home() {
             class: "animate-[pulse_2s_cubic-bezier(.4,0,.6,1)_infinite]",
           })}
         >
-          tana
+          adan
         </h1>
       </div>
 
