@@ -22,7 +22,7 @@ const SpotifySnippet = () => {
         header={data.title}
         href={data.songUrl}
         subtitle={data.artist}
-        tooltipContent="this is what i playing on Spotify now"
+        tooltipContent="what i playing on Spotify now"
       />
     );
   }
