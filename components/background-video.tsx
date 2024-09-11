@@ -7,7 +7,7 @@ const Video = () => {
       preload="none"
     >
       <source
-        src="https://shiverize.me/ebaf95c8-b543-46a2-9d0d-1933f919abd1.mp4"
+        src="https://cloud.sayato.lol/0:/SMT%203/drake.mp4"
         type="video/mp4"
       />
       <track default kind="captions" />
