@@ -10,7 +10,7 @@ export default function Home() {
       <div className="inline-block max-w-lg text-center justify-center">
         <Avatar
           className="w-20 h-20 text-large mx-auto"
-          src="https://shiverize.me/ab67616d0000b2737443f73838a36bc8ce566113.jfif"
+          src="https://i.ibb.co.com/DQrHr0N/IMG-1568-1.jpg"
         />
         <h1
           className={title({
