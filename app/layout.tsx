@@ -53,11 +53,11 @@ export default function RootLayout({
                 <Link
                   isExternal
                   className="flex items-center gap-1 text-current"
-                  href="https://www.roblox.com/home"
+                  href="https://open.spotify.com/playlist/4hKJu0b7C9Qi6yAvQeS99x?si=0c97d0cdf06c4e6f"
                   title="sponsor"
                 >
                   <span className="text-default-600">Powered by</span>
-                  <p className="text-primary">$</p>
+                  <p className="text-primary">$$$</p>
                 </Link>
               </footer>
             </div>
