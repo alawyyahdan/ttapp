@@ -3,6 +3,24 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
 
+interface ChadGPTProps {
+  className?: string; // Menambahkan className sebagai optional prop
+}
+
+const ChadGPT: React.FC<ChadGPTProps> = ({ className }) => {
+  const handleRedirect = () => {
+    window.location.href = "https://gpt.sayato.lol"; // Ganti dengan URL yang diinginkan
+  };
+
+  return (
+    <div className={className}>
+      <Button isIconOnly aria-label="Redirect" onClick={handleRedirect}>
+        <RedirectIcon />
+      </Button>
+    </div>
+  );
+};
+
 const RedirectIcon = () => (
   <svg
     className="size-6"
@@ -20,18 +38,4 @@ const RedirectIcon = () => (
   </svg>
 );
 
-const VolumeControl: React.FC = () => {
-  const handleRedirect = () => {
-    window.location.href = "https://gpt.sayato.lol"; // Ganti dengan URL yang diinginkan
-  };
-
-  return (
-    <div className="absolute top-4 left-4 z-50">
-      <Button isIconOnly aria-label="Redirect" onClick={handleRedirect}>
-        <RedirectIcon />
-      </Button>
-    </div>
-  );
-};
-
-export default VolumeControl;
+export default ChadGPT;
