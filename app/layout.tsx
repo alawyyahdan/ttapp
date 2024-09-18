@@ -46,8 +46,11 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <ClickToEnter>
             <div className="relative flex flex-col h-screen">
-              <VolumeControl />
-              <ChadGPT className="mt-4" /> {/* Tambahkan margin top untuk memberi jarak */}
+              {/* Kontainer untuk VolumeControl dan ChadGPT */}
+              <div className="flex flex-col items-center mb-8"> {/* Flex column untuk mengatur keduanya secara vertikal */}
+                <VolumeControl className="mb-4" /> {/* Tambahkan margin bottom */}
+                <ChadGPT /> {/* ChadGPT tanpa margin */}
+              </div>
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
