@@ -47,6 +47,7 @@ export default function RootLayout({
           <ClickToEnter>
             <div className="relative flex flex-col h-screen">
               <VolumeControl />
+              <div className="relative flex flex-col h-screen">
               <ChadGPT /> {/* Tambahkan margin top untuk memberi jarak */}
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
