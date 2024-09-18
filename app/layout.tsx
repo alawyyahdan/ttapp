@@ -9,7 +9,6 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import ClickToEnter from "@/components/click-to-enter";
 import VolumeControl from "@/components/volume-control";
-import ChadGPT from "@/components/chadgpt";
 
 export const metadata: Metadata = {
   title: {
@@ -43,13 +42,10 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-       <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <ClickToEnter>
-            <VolumeControl /><ChadGPT />
+            <VolumeControl />
             <div className="relative flex flex-col h-screen">
-              <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-                {children}
-              </main>
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
@@ -57,11 +53,11 @@ export default function RootLayout({
                 <Link
                   isExternal
                   className="flex items-center gap-1 text-current"
-                  href="https://open.spotify.com/playlist/4hKJu0b7C9Qi6yAvQeS99x?si=0c97d0cdf06c4e6f"
+                  href="https://www.roblox.com/home"
                   title="sponsor"
                 >
                   <span className="text-default-600">Powered by</span>
-                  <p className="text-primary">$$$</p>
+                  <p className="text-primary">$</p>
                 </Link>
               </footer>
             </div>
