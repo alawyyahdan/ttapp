@@ -43,13 +43,13 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-      <ClickToEnter />
-      <div className="relative flex flex-col h-screen">
-        <div className="flex flex-row justify-center space-x-4 pt-4">
-          <VolumeControl />
-          <ChadGPT />
-        </div>
+       <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          <ClickToEnter>
+            <VolumeControl /><ChadGPT />
+            <div className="relative flex flex-col h-screen">
+              <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+                {children}
+              </main>
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
