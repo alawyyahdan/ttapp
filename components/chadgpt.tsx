@@ -13,7 +13,7 @@ const ChadGPT: React.FC<ChadGPTProps> = ({ className }) => {
   };
 
   return (
-    <div className={`absolute top-16 left-4 bottom-5 z-50 ${className}`}>
+    <div className={`absolute top-8 left-4 bottom-5 z-50 ${className}`}>
       <Button isIconOnly aria-label="Redirect" onClick={handleRedirect}>
         <RedirectIcon />
       </Button>
