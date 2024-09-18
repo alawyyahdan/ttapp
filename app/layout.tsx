@@ -45,11 +45,9 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <ClickToEnter>
-            <div className="flex flex-col items-center pt-4">
+            <div className="relative flex flex-col h-screen">
               <VolumeControl />
               <ChadGPT className="mt-4" /> {/* Tambahkan margin top untuk memberi jarak */}
-            </div>
-            <div className="relative flex flex-col h-screen">
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
