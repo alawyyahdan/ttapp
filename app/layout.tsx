@@ -44,12 +44,12 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <ClickToEnter>
-            <VolumeControl />
-             <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <ClickToEnter>
-            <ChadGPT />
-            <div className="relative flex flex-col h-screen">
+      <ClickToEnter />
+      <div className="relative flex flex-col h-screen">
+        <div className="flex flex-row justify-center space-x-4 pt-4">
+          <VolumeControl />
+          <ChadGPT />
+        </div>
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
