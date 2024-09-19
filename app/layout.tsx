@@ -11,6 +11,7 @@ import ClickToEnter from "@/components/click-to-enter";
 import VolumeControl from "@/components/volume-control";
 import ChadGPT from "@/components/chadgpt";
 import Cloud from "@/components/cloud";
+import Canva from "@/components/canva";
 
 export const metadata: Metadata = {
   title: {
@@ -49,6 +50,7 @@ export default function RootLayout({
             <VolumeControl />
             <ChadGPT />
             <Cloud />
+            <Canva />
             <div className="relative flex flex-col h-screen">
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
