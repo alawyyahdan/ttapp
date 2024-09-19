@@ -13,7 +13,7 @@ const Cloud: React.FC<CloudProps> = ({ className }) => {
   };
 
   return (
-    <div className={`absolute top-4 left-40 z-50 ${className}`}>
+    <div className={`absolute top-4 left-30 z-50 ${className}`}>
       <Button isIconOnly aria-label="Redirect" onClick={handleRedirect}>
         <RedirectIcon />
       </Button>
