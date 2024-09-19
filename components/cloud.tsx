@@ -9,7 +9,7 @@ interface CloudProps {
 
 const Cloud: React.FC<CloudProps> = ({ className }) => {
   const handleRedirect = () => {
-    window.location.href = "https://gpt.sayato.lol"; // Ganti dengan URL yang diinginkan
+    window.location.href = "https://cloud.sayato.lol"; // Ganti dengan URL yang diinginkan
   };
 
   return (
