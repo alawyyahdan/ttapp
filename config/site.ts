@@ -3,5 +3,5 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "adan",
   description: "What do you desire?",
-  ogImage: "/thumbnail.jpg",
+  ogImage: "https://sayato.lol/thumbnail.jpg",
 };
