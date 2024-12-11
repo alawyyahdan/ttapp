@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    images: [
+      "/thumbnail.jpg", // Hanya URL gambar
+    ],
+  },
 };
 
 export const viewport: Viewport = {
