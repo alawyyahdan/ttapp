@@ -7,7 +7,7 @@ const Video = () => {
       preload="none"
     >
       <source
-        src="https://drive.sayato.lol/api/raw?path=/coolyeah/SMT%203/rolemodel.mp4"
+        src="https://drive.adan.lat/api/raw?path=/coolyeah/SMT%203/rolemodel.mp4"
         type="video/mp4"
       />
       <track default kind="captions" />
