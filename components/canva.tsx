@@ -9,7 +9,7 @@ interface CanvaProps {
 
 const Canva: React.FC<CanvaProps> = ({ className }) => {
   const handleRedirect = () => {
-    window.location.href = "https://www.canva.com/brand/join?token=FKk1Xry4T3000n1QNlNOJQ&referrer=team-invite"; // Ganti dengan URL yang diinginkan
+    window.location.href = "https://mqtt.adan.lat"; // Ganti dengan URL yang diinginkan
   };
 
   return (
